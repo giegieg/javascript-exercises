@@ -26,9 +26,8 @@
     "jest-cli": "^20.0.0"
   },
   "dependencies": {
-    "chalk": "^1.1.3",
-    "extend": "^3.0.2",
     "yeoman-generator": "^1.0.0",
+    "chalk": "^1.1.3",
     "yosay": "^2.0.0"
   },
   "jest": {
