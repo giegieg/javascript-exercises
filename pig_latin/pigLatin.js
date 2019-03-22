@@ -1,6 +1,6 @@
 function translate(str) {
 	// body...
-	let strArr = str.split(" ");
+	let strArr = str.split(" ");			//to separate words
 	let result =[];
 
 		for(let word of strArr) {
@@ -42,17 +42,20 @@ function conditions(str) {
 	else if(str[0] in vowels) {
 		return(`${str}ay`);
 	}
+	//words that start with a consonant
 	else if (!(str[0] in vowels) && (str[1] in vowels)) {
 		let letter = str.charAt(0);
 		str = str.substring(1); 
 		return(`${str}${letter}ay`);
 	}
+	//words that start with two consonants
 	else if (!(str[0] in vowels) && !(str[1] in vowels) && (str[2] in vowels)) {
 		let letter = str.charAt(0);
 		let letter2 = str.charAt(1);
 		str = str.substring(2); 
 		return(`${str}${letter}${letter2}ay`);
 	}
+	//words that start with three consonants
 	else if (!(str[0] in vowels) && !(str[1] in vowels) && !(str[2] in vowels) && (str[3] in vowels)) {
 		let letter = str.charAt(0);
 		let letter2 = str.charAt(1);
